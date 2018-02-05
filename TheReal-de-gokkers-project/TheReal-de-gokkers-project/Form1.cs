@@ -16,5 +16,10 @@ namespace TheReal_de_gokkers_project
         {
             InitializeComponent();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
