@@ -16,5 +16,17 @@ namespace DeGokkers
         {
             InitializeComponent();
         }
+
+        private void btnBet_Click(object sender, EventArgs e)
+        {
+            int Bet = Decimal.ToInt32(inpMoney.Value);
+            int AnimalNumber = Decimal.ToInt32(inpAnNum.Value);
+            
+            lblGijs.Text = "Gijs heeft "+Bet+" gezet op nummer "+ AnimalNumber+ ".";
+            
+            
+
+
+        }
     }
 }
