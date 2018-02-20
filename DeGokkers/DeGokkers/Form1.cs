@@ -21,11 +21,14 @@ namespace DeGokkers
         {
             int Bet = Decimal.ToInt32(inpMoney.Value);
             int AnimalNumber = Decimal.ToInt32(inpAnNum.Value);
-            
-            lblGijs.Text = "Gijs heeft "+Bet+" gezet op nummer "+ AnimalNumber+ ".";
-            
-            
-
+            if (btnPlayer1.Checked)
+            {
+                lblPlayer1.Text = "Gijs heeft " + Bet + " gezet op nummer " + AnimalNumber + ".";
+            }
+            if (btnPlayer2.Checked)
+            {
+                lblPlayer2.Text = ""
+            }
 
         }
     }
