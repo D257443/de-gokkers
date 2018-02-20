@@ -30,34 +30,39 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
+            this.btnAddName = new System.Windows.Forms.Button();
+            this.btnName2 = new System.Windows.Forms.RadioButton();
+            this.btnName3 = new System.Windows.Forms.RadioButton();
+            this.btnName1 = new System.Windows.Forms.RadioButton();
+            this.txtInpName = new System.Windows.Forms.TextBox();
+            this.inpAnNum3 = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.button2 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.inpMoney3 = new System.Windows.Forms.NumericUpDown();
+            this.btnBet3 = new System.Windows.Forms.Button();
+            this.inpAnNum2 = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
+            this.inpMoney2 = new System.Windows.Forms.NumericUpDown();
+            this.btnBet2 = new System.Windows.Forms.Button();
             this.lblPlayer2 = new System.Windows.Forms.Label();
             this.lblPlayer1 = new System.Windows.Forms.Label();
             this.lblPlayer3 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.inpAnNum = new System.Windows.Forms.NumericUpDown();
+            this.inpAnNum1 = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.inpMoney = new System.Windows.Forms.NumericUpDown();
-            this.btnBet = new System.Windows.Forms.Button();
+            this.inpMoney1 = new System.Windows.Forms.NumericUpDown();
+            this.btnBet1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnPlayer3 = new System.Windows.Forms.RadioButton();
             this.btnPlayer2 = new System.Windows.Forms.RadioButton();
             this.btnPlayer1 = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inpMoney)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpMoney2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpMoney1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -71,22 +76,27 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.numericUpDown3);
+            this.groupBox1.Controls.Add(this.btnAddName);
+            this.groupBox1.Controls.Add(this.btnName2);
+            this.groupBox1.Controls.Add(this.btnName3);
+            this.groupBox1.Controls.Add(this.btnName1);
+            this.groupBox1.Controls.Add(this.txtInpName);
+            this.groupBox1.Controls.Add(this.inpAnNum3);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.numericUpDown4);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.numericUpDown1);
+            this.groupBox1.Controls.Add(this.inpMoney3);
+            this.groupBox1.Controls.Add(this.btnBet3);
+            this.groupBox1.Controls.Add(this.inpAnNum2);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.numericUpDown2);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.inpMoney2);
+            this.groupBox1.Controls.Add(this.btnBet2);
             this.groupBox1.Controls.Add(this.lblPlayer2);
             this.groupBox1.Controls.Add(this.lblPlayer1);
             this.groupBox1.Controls.Add(this.lblPlayer3);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.inpAnNum);
+            this.groupBox1.Controls.Add(this.inpAnNum1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.inpMoney);
-            this.groupBox1.Controls.Add(this.btnBet);
+            this.groupBox1.Controls.Add(this.inpMoney1);
+            this.groupBox1.Controls.Add(this.btnBet1);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btnPlayer3);
             this.groupBox1.Controls.Add(this.btnPlayer2);
@@ -98,23 +108,77 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wed Bureau";
             // 
-            // numericUpDown3
+            // btnAddName
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(289, 149);
-            this.numericUpDown3.Maximum = new decimal(new int[] {
+            this.btnAddName.Location = new System.Drawing.Point(320, 20);
+            this.btnAddName.Name = "btnAddName";
+            this.btnAddName.Size = new System.Drawing.Size(75, 23);
+            this.btnAddName.TabIndex = 22;
+            this.btnAddName.Text = "Add Name";
+            this.btnAddName.UseVisualStyleBackColor = true;
+            this.btnAddName.Click += new System.EventHandler(this.btnAddName_Click);
+            // 
+            // btnName2
+            // 
+            this.btnName2.AutoSize = true;
+            this.btnName2.Location = new System.Drawing.Point(182, 19);
+            this.btnName2.Name = "btnName2";
+            this.btnName2.Size = new System.Drawing.Size(63, 17);
+            this.btnName2.TabIndex = 21;
+            this.btnName2.TabStop = true;
+            this.btnName2.Text = "Player 2";
+            this.btnName2.UseVisualStyleBackColor = true;
+            // 
+            // btnName3
+            // 
+            this.btnName3.AutoSize = true;
+            this.btnName3.Location = new System.Drawing.Point(251, 19);
+            this.btnName3.Name = "btnName3";
+            this.btnName3.Size = new System.Drawing.Size(63, 17);
+            this.btnName3.TabIndex = 20;
+            this.btnName3.TabStop = true;
+            this.btnName3.Text = "Player 3";
+            this.btnName3.UseVisualStyleBackColor = true;
+            // 
+            // btnName1
+            // 
+            this.btnName1.AutoSize = true;
+            this.btnName1.Location = new System.Drawing.Point(113, 19);
+            this.btnName1.Name = "btnName1";
+            this.btnName1.Size = new System.Drawing.Size(63, 17);
+            this.btnName1.TabIndex = 19;
+            this.btnName1.TabStop = true;
+            this.btnName1.Text = "Player 1";
+            this.btnName1.UseVisualStyleBackColor = true;
+            // 
+            // txtInpName
+            // 
+            this.txtInpName.AutoCompleteCustomSource.AddRange(new string[] {
+            "Gijs",
+            "Dave",
+            "Damien"});
+            this.txtInpName.Location = new System.Drawing.Point(7, 20);
+            this.txtInpName.Name = "txtInpName";
+            this.txtInpName.Size = new System.Drawing.Size(100, 20);
+            this.txtInpName.TabIndex = 18;
+            // 
+            // inpAnNum3
+            // 
+            this.inpAnNum3.Location = new System.Drawing.Point(289, 149);
+            this.inpAnNum3.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown3.Minimum = new decimal(new int[] {
+            this.inpAnNum3.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(42, 20);
-            this.numericUpDown3.TabIndex = 17;
-            this.numericUpDown3.Value = new decimal(new int[] {
+            this.inpAnNum3.Name = "inpAnNum3";
+            this.inpAnNum3.Size = new System.Drawing.Size(42, 20);
+            this.inpAnNum3.TabIndex = 17;
+            this.inpAnNum3.Value = new decimal(new int[] {
             3,
             0,
             0,
@@ -130,49 +194,50 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "euro\'s op nummer";
             // 
-            // numericUpDown4
+            // inpMoney3
             // 
-            this.numericUpDown4.Location = new System.Drawing.Point(145, 149);
-            this.numericUpDown4.Minimum = new decimal(new int[] {
+            this.inpMoney3.Location = new System.Drawing.Point(145, 149);
+            this.inpMoney3.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(42, 20);
-            this.numericUpDown4.TabIndex = 15;
-            this.numericUpDown4.Value = new decimal(new int[] {
+            this.inpMoney3.Name = "inpMoney3";
+            this.inpMoney3.Size = new System.Drawing.Size(42, 20);
+            this.inpMoney3.TabIndex = 15;
+            this.inpMoney3.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
             // 
-            // button2
+            // btnBet3
             // 
-            this.button2.Location = new System.Drawing.Point(64, 149);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 20);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Wedt";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnBet3.Location = new System.Drawing.Point(64, 149);
+            this.btnBet3.Name = "btnBet3";
+            this.btnBet3.Size = new System.Drawing.Size(75, 20);
+            this.btnBet3.TabIndex = 14;
+            this.btnBet3.Text = "Wedt";
+            this.btnBet3.UseVisualStyleBackColor = true;
+            this.btnBet3.Click += new System.EventHandler(this.btnBet3_Click);
             // 
-            // numericUpDown1
+            // inpAnNum2
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(289, 126);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.inpAnNum2.Location = new System.Drawing.Point(289, 126);
+            this.inpAnNum2.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.inpAnNum2.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(42, 20);
-            this.numericUpDown1.TabIndex = 13;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.inpAnNum2.Name = "inpAnNum2";
+            this.inpAnNum2.Size = new System.Drawing.Size(42, 20);
+            this.inpAnNum2.TabIndex = 13;
+            this.inpAnNum2.Value = new decimal(new int[] {
             3,
             0,
             0,
@@ -188,31 +253,32 @@
             this.label4.TabIndex = 12;
             this.label4.Text = "euro\'s op nummer";
             // 
-            // numericUpDown2
+            // inpMoney2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(145, 126);
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.inpMoney2.Location = new System.Drawing.Point(145, 126);
+            this.inpMoney2.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(42, 20);
-            this.numericUpDown2.TabIndex = 11;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.inpMoney2.Name = "inpMoney2";
+            this.inpMoney2.Size = new System.Drawing.Size(42, 20);
+            this.inpMoney2.TabIndex = 11;
+            this.inpMoney2.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
             // 
-            // button1
+            // btnBet2
             // 
-            this.button1.Location = new System.Drawing.Point(64, 126);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 20);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Wedt";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnBet2.Location = new System.Drawing.Point(64, 126);
+            this.btnBet2.Name = "btnBet2";
+            this.btnBet2.Size = new System.Drawing.Size(75, 20);
+            this.btnBet2.TabIndex = 10;
+            this.btnBet2.Text = "Wedt";
+            this.btnBet2.UseVisualStyleBackColor = true;
+            this.btnBet2.Click += new System.EventHandler(this.btnBet2_Click);
             // 
             // lblPlayer2
             // 
@@ -232,7 +298,7 @@
             this.lblPlayer1.BackColor = System.Drawing.SystemColors.Window;
             this.lblPlayer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPlayer1.Cursor = System.Windows.Forms.Cursors.SizeAll;
-            this.lblPlayer1.Location = new System.Drawing.Point(369, 103);
+            this.lblPlayer1.Location = new System.Drawing.Point(369, 105);
             this.lblPlayer1.MinimumSize = new System.Drawing.Size(200, 0);
             this.lblPlayer1.Name = "lblPlayer1";
             this.lblPlayer1.Size = new System.Drawing.Size(200, 15);
@@ -260,23 +326,23 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Weddenshappen";
             // 
-            // inpAnNum
+            // inpAnNum1
             // 
-            this.inpAnNum.Location = new System.Drawing.Point(289, 103);
-            this.inpAnNum.Maximum = new decimal(new int[] {
+            this.inpAnNum1.Location = new System.Drawing.Point(289, 103);
+            this.inpAnNum1.Maximum = new decimal(new int[] {
             3,
             0,
             0,
             0});
-            this.inpAnNum.Minimum = new decimal(new int[] {
+            this.inpAnNum1.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.inpAnNum.Name = "inpAnNum";
-            this.inpAnNum.Size = new System.Drawing.Size(42, 20);
-            this.inpAnNum.TabIndex = 6;
-            this.inpAnNum.Value = new decimal(new int[] {
+            this.inpAnNum1.Name = "inpAnNum1";
+            this.inpAnNum1.Size = new System.Drawing.Size(42, 20);
+            this.inpAnNum1.TabIndex = 6;
+            this.inpAnNum1.Value = new decimal(new int[] {
             3,
             0,
             0,
@@ -292,32 +358,32 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "euro\'s op nummer";
             // 
-            // inpMoney
+            // inpMoney1
             // 
-            this.inpMoney.Location = new System.Drawing.Point(145, 103);
-            this.inpMoney.Minimum = new decimal(new int[] {
+            this.inpMoney1.Location = new System.Drawing.Point(145, 103);
+            this.inpMoney1.Minimum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.inpMoney.Name = "inpMoney";
-            this.inpMoney.Size = new System.Drawing.Size(42, 20);
-            this.inpMoney.TabIndex = 4;
-            this.inpMoney.Value = new decimal(new int[] {
+            this.inpMoney1.Name = "inpMoney1";
+            this.inpMoney1.Size = new System.Drawing.Size(42, 20);
+            this.inpMoney1.TabIndex = 4;
+            this.inpMoney1.Value = new decimal(new int[] {
             5,
             0,
             0,
             0});
             // 
-            // btnBet
+            // btnBet1
             // 
-            this.btnBet.Location = new System.Drawing.Point(64, 103);
-            this.btnBet.Name = "btnBet";
-            this.btnBet.Size = new System.Drawing.Size(75, 20);
-            this.btnBet.TabIndex = 3;
-            this.btnBet.Text = "Wedt";
-            this.btnBet.UseVisualStyleBackColor = true;
-            this.btnBet.Click += new System.EventHandler(this.btnBet_Click);
+            this.btnBet1.Location = new System.Drawing.Point(64, 103);
+            this.btnBet1.Name = "btnBet1";
+            this.btnBet1.Size = new System.Drawing.Size(75, 20);
+            this.btnBet1.TabIndex = 3;
+            this.btnBet1.Text = "Wedt";
+            this.btnBet1.UseVisualStyleBackColor = true;
+            this.btnBet1.Click += new System.EventHandler(this.btnBet1_Click);
             // 
             // label1
             // 
@@ -372,12 +438,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.inpMoney)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpMoney2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpAnNum1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.inpMoney1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -391,21 +457,26 @@
         private System.Windows.Forms.RadioButton btnPlayer2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.NumericUpDown inpAnNum;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.NumericUpDown inpMoney;
-        private System.Windows.Forms.Button btnBet;
+        private System.Windows.Forms.NumericUpDown inpMoney1;
+        private System.Windows.Forms.Button btnBet1;
         private System.Windows.Forms.Label lblPlayer2;
         private System.Windows.Forms.Label lblPlayer1;
         private System.Windows.Forms.Label lblPlayer3;
-        private System.Windows.Forms.NumericUpDown numericUpDown3;
+        private System.Windows.Forms.NumericUpDown inpAnNum3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown inpMoney3;
+        private System.Windows.Forms.Button btnBet3;
+        private System.Windows.Forms.NumericUpDown inpAnNum2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown inpMoney2;
+        private System.Windows.Forms.Button btnBet2;
+        private System.Windows.Forms.NumericUpDown inpAnNum1;
+        private System.Windows.Forms.Button btnAddName;
+        private System.Windows.Forms.RadioButton btnName2;
+        private System.Windows.Forms.RadioButton btnName3;
+        private System.Windows.Forms.RadioButton btnName1;
+        private System.Windows.Forms.TextBox txtInpName;
     }
 }
 
