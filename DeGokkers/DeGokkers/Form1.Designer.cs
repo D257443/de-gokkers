@@ -455,10 +455,12 @@
             // tmrHamster
             // 
             this.tmrHamster.Interval = 85;
+            this.tmrHamster.Tick += new System.EventHandler(this.tmrHamster_Tick);
             // 
             // tmrElephant
             // 
             this.tmrElephant.Interval = 75;
+            this.tmrElephant.Tick += new System.EventHandler(this.tmrElephant_Tick);
             // 
             // picDog1
             // 
@@ -516,6 +518,7 @@
             // tmrPanda
             // 
             this.tmrPanda.Interval = 80;
+            this.tmrPanda.Tick += new System.EventHandler(this.tmrPanda_Tick);
             // 
             // Form1
             // 

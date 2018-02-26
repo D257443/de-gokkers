@@ -90,6 +90,10 @@ namespace DeGokkers
             x = rnd.Next(0, 10);
             picDog4.Left += x;
 
+            if(picDog1.Location.X >= 500 || picDog2.Location.X >= 500 || picDog3.Location.X >= 500 || picDog4.Location.X >= 500)
+            {
+                tmrDog.Enabled = false;
+            }
         }
 
         private void tmrPanther_Tick(object sender, EventArgs e)
@@ -97,13 +101,75 @@ namespace DeGokkers
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
-           //  picPanther1.Left += x;
-           //  x = rnd.Next(0, 10);
-           //  picPanther2.Left += x;
-           //  x = rnd.Next(0, 10);
-           //  picPanther3.Left += x;
-           //  x = rnd.Next(0, 10);
-           //  picPanther4.Left += x;
-        } 
+            //  picPanther1.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picPanther2.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picPanther3.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picPanther4.Left += x;
+
+           // if (picPanther1.Location.X >= 500 || picPanther2.Location.X >= 500 || picPanther3.Location.X >= 500 || picPanther4.Location.X >= 500)
+            {
+           //     tmrPanther.Enabled = false;
+            }
+        }
+
+        private void tmrHamster_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(0, 10);
+
+            //  picHmaster1.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picHmaster2.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picHmaster3.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picHmaster4.Left += x;
+
+           // if (picHamster1.Location.X >= 500 || picHamster2.Location.X >= 500 || picHamster3.Location.X >= 500 || picHamster4.Location.X >= 500)
+            {
+           //    tmrHamster.Enabled = false;
+            }
+        }
+
+        private void tmrElephant_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(0, 10);
+
+            //  picElephant1.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picElephant2.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picElephant3.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picElephant4.Left += x;
+
+           // if (picElephant1.Location.X >= 500 || picElephant2.Location.X >= 500 || picElephant3.Location.X >= 500 || picElephant4.Location.X >= 500)
+            {
+           //     tmrElephant.Enabled = false;
+            }
+        }
+
+        private void tmrPanda_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(0, 10);
+
+            //  picPanda1.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picPanda2.Left += x;
+            //  x = rnd.Next(0, 10);
+            //  picPanda3.Left += x;
+            //  x = rnd.Next(0, 10);
+            // picPanda4.Left += x;
+
+          //  if (picPanda1.Location.X >= 500 || picPanda2.Location.X >= 500 || picPanda3.Location.X >= 500 || picPanda4.Location.X >= 500)
+            {
+          //      tmrPanda.Enabled = false;
+            }
+        }
     }
 }
