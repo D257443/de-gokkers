@@ -55,6 +55,7 @@
             this.btnPlayer3 = new System.Windows.Forms.RadioButton();
             this.btnPlayer2 = new System.Windows.Forms.RadioButton();
             this.btnPlayer1 = new System.Windows.Forms.RadioButton();
+            this.btnStart = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
@@ -76,6 +77,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnStart);
             this.groupBox1.Controls.Add(this.btnAddName);
             this.groupBox1.Controls.Add(this.btnName2);
             this.groupBox1.Controls.Add(this.btnName3);
@@ -426,6 +428,16 @@
             this.btnPlayer1.Text = "Speler1";
             this.btnPlayer1.UseVisualStyleBackColor = true;
             // 
+            // btnStart
+            // 
+            this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
+            this.btnStart.Location = new System.Drawing.Point(369, 176);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(200, 81);
+            this.btnStart.TabIndex = 23;
+            this.btnStart.Text = "START";
+            this.btnStart.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -477,6 +489,7 @@
         private System.Windows.Forms.RadioButton btnName3;
         private System.Windows.Forms.RadioButton btnName1;
         private System.Windows.Forms.TextBox txtInpName;
+        private System.Windows.Forms.Button btnStart;
     }
 }
 
