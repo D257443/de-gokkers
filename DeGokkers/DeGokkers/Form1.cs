@@ -53,6 +53,18 @@ namespace DeGokkers
 
         private void btnAddName_Click(object sender, EventArgs e)
         {
+            if (btnName1.Checked)
+            {
+                btnPlayer1.Text = txtInpName.Text;
+            }
+            else if (btnName2.Checked)
+            {
+                btnPlayer2.Text = txtInpName.Text;
+            }
+            else if (btnName3.Checked)
+            {
+                btnPlayer3.Text = txtInpName.Text;
+            }
 
         }
     }
