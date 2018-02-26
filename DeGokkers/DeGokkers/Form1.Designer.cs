@@ -398,10 +398,10 @@
             this.btnPlayer3.AutoSize = true;
             this.btnPlayer3.Location = new System.Drawing.Point(6, 152);
             this.btnPlayer3.Name = "btnPlayer3";
-            this.btnPlayer3.Size = new System.Drawing.Size(51, 17);
+            this.btnPlayer3.Size = new System.Drawing.Size(64, 17);
             this.btnPlayer3.TabIndex = 2;
             this.btnPlayer3.TabStop = true;
-            this.btnPlayer3.Text = "Dave";
+            this.btnPlayer3.Text = "Speler 3";
             this.btnPlayer3.UseVisualStyleBackColor = true;
             // 
             // btnPlayer2
@@ -412,7 +412,7 @@
             this.btnPlayer2.Size = new System.Drawing.Size(61, 17);
             this.btnPlayer2.TabIndex = 1;
             this.btnPlayer2.TabStop = true;
-            this.btnPlayer2.Text = "Damien";
+            this.btnPlayer2.Text = "Speler2";
             this.btnPlayer2.UseVisualStyleBackColor = true;
             // 
             // btnPlayer1
@@ -420,10 +420,10 @@
             this.btnPlayer1.AutoSize = true;
             this.btnPlayer1.Location = new System.Drawing.Point(6, 106);
             this.btnPlayer1.Name = "btnPlayer1";
-            this.btnPlayer1.Size = new System.Drawing.Size(42, 17);
+            this.btnPlayer1.Size = new System.Drawing.Size(61, 17);
             this.btnPlayer1.TabIndex = 0;
             this.btnPlayer1.TabStop = true;
-            this.btnPlayer1.Text = "Gijs";
+            this.btnPlayer1.Text = "Speler1";
             this.btnPlayer1.UseVisualStyleBackColor = true;
             // 
             // Form1
