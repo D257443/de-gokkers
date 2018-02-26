@@ -58,14 +58,15 @@
             this.btnPlayer2 = new System.Windows.Forms.RadioButton();
             this.btnPlayer1 = new System.Windows.Forms.RadioButton();
             this.tmrDog = new System.Windows.Forms.Timer(this.components);
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.tmrPanther = new System.Windows.Forms.Timer(this.components);
+            this.tmrHamster = new System.Windows.Forms.Timer(this.components);
+            this.tmrElephant = new System.Windows.Forms.Timer(this.components);
             this.picDog1 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.picDog4 = new System.Windows.Forms.PictureBox();
+            this.picDog3 = new System.Windows.Forms.PictureBox();
+            this.picDog2 = new System.Windows.Forms.PictureBox();
+            this.tmrPanda = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
@@ -75,9 +76,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDog4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDog3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDog2)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -124,6 +125,7 @@
             this.btnStart.TabIndex = 23;
             this.btnStart.Text = "START";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // btnAddName
             // 
@@ -183,7 +185,7 @@
             // 
             this.inpAnNum3.Location = new System.Drawing.Point(289, 149);
             this.inpAnNum3.Maximum = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -196,7 +198,7 @@
             this.inpAnNum3.Size = new System.Drawing.Size(42, 20);
             this.inpAnNum3.TabIndex = 17;
             this.inpAnNum3.Value = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -242,7 +244,7 @@
             // 
             this.inpAnNum2.Location = new System.Drawing.Point(289, 126);
             this.inpAnNum2.Maximum = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -255,7 +257,7 @@
             this.inpAnNum2.Size = new System.Drawing.Size(42, 20);
             this.inpAnNum2.TabIndex = 13;
             this.inpAnNum2.Value = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -307,7 +309,6 @@
             this.lblPlayer2.Name = "lblPlayer2";
             this.lblPlayer2.Size = new System.Drawing.Size(200, 15);
             this.lblPlayer2.TabIndex = 9;
-            this.lblPlayer2.Text = "Damien heeft";
             // 
             // lblPlayer1
             // 
@@ -320,7 +321,6 @@
             this.lblPlayer1.Name = "lblPlayer1";
             this.lblPlayer1.Size = new System.Drawing.Size(200, 15);
             this.lblPlayer1.TabIndex = 8;
-            this.lblPlayer1.Text = "Gijs heeft";
             // 
             // lblPlayer3
             // 
@@ -332,7 +332,6 @@
             this.lblPlayer3.Name = "lblPlayer3";
             this.lblPlayer3.Size = new System.Drawing.Size(200, 15);
             this.lblPlayer3.TabIndex = 8;
-            this.lblPlayer3.Text = "Dave heeft";
             // 
             // label3
             // 
@@ -347,7 +346,7 @@
             // 
             this.inpAnNum1.Location = new System.Drawing.Point(289, 103);
             this.inpAnNum1.Maximum = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -360,7 +359,7 @@
             this.inpAnNum1.Size = new System.Drawing.Size(42, 20);
             this.inpAnNum1.TabIndex = 6;
             this.inpAnNum1.Value = new decimal(new int[] {
-            3,
+            4,
             0,
             0,
             0});
@@ -415,10 +414,10 @@
             this.btnPlayer3.AutoSize = true;
             this.btnPlayer3.Location = new System.Drawing.Point(6, 152);
             this.btnPlayer3.Name = "btnPlayer3";
-            this.btnPlayer3.Size = new System.Drawing.Size(64, 17);
+            this.btnPlayer3.Size = new System.Drawing.Size(61, 17);
             this.btnPlayer3.TabIndex = 2;
             this.btnPlayer3.TabStop = true;
-            this.btnPlayer3.Text = "Speler 3";
+            this.btnPlayer3.Text = "Speler3";
             this.btnPlayer3.UseVisualStyleBackColor = true;
             // 
             // btnPlayer2
@@ -446,6 +445,20 @@
             // tmrDog
             // 
             this.tmrDog.Interval = 50;
+            this.tmrDog.Tick += new System.EventHandler(this.tmrDog_Tick);
+            // 
+            // tmrPanther
+            // 
+            this.tmrPanther.Interval = 25;
+            this.tmrPanther.Tick += new System.EventHandler(this.tmrPanther_Tick);
+            // 
+            // tmrHamster
+            // 
+            this.tmrHamster.Interval = 85;
+            // 
+            // tmrElephant
+            // 
+            this.tmrElephant.Interval = 75;
             // 
             // picDog1
             // 
@@ -467,47 +480,51 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // pictureBox2
+            // picDog4
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.Image = global::DeGokkers.Properties.Resources.dog1;
-            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(12, 155);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(82, 32);
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
+            this.picDog4.BackColor = System.Drawing.Color.White;
+            this.picDog4.Image = global::DeGokkers.Properties.Resources.dog1;
+            this.picDog4.InitialImage = ((System.Drawing.Image)(resources.GetObject("picDog4.InitialImage")));
+            this.picDog4.Location = new System.Drawing.Point(12, 155);
+            this.picDog4.Name = "picDog4";
+            this.picDog4.Size = new System.Drawing.Size(82, 32);
+            this.picDog4.TabIndex = 3;
+            this.picDog4.TabStop = false;
             // 
-            // pictureBox3
+            // picDog3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::DeGokkers.Properties.Resources.dog1;
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(12, 108);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(82, 32);
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
+            this.picDog3.BackColor = System.Drawing.Color.White;
+            this.picDog3.Image = global::DeGokkers.Properties.Resources.dog1;
+            this.picDog3.InitialImage = ((System.Drawing.Image)(resources.GetObject("picDog3.InitialImage")));
+            this.picDog3.Location = new System.Drawing.Point(12, 108);
+            this.picDog3.Name = "picDog3";
+            this.picDog3.Size = new System.Drawing.Size(82, 32);
+            this.picDog3.TabIndex = 4;
+            this.picDog3.TabStop = false;
             // 
-            // pictureBox4
+            // picDog2
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.White;
-            this.pictureBox4.Image = global::DeGokkers.Properties.Resources.dog1;
-            this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(12, 60);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(82, 32);
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
+            this.picDog2.BackColor = System.Drawing.Color.White;
+            this.picDog2.Image = global::DeGokkers.Properties.Resources.dog1;
+            this.picDog2.InitialImage = ((System.Drawing.Image)(resources.GetObject("picDog2.InitialImage")));
+            this.picDog2.Location = new System.Drawing.Point(12, 60);
+            this.picDog2.Name = "picDog2";
+            this.picDog2.Size = new System.Drawing.Size(82, 32);
+            this.picDog2.TabIndex = 5;
+            this.picDog2.TabStop = false;
+            // 
+            // tmrPanda
+            // 
+            this.tmrPanda.Interval = 80;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(601, 481);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.picDog2);
+            this.Controls.Add(this.picDog3);
+            this.Controls.Add(this.picDog4);
             this.Controls.Add(this.picDog1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
@@ -523,9 +540,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picDog1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDog4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDog3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDog2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -561,13 +578,14 @@
         private System.Windows.Forms.TextBox txtInpName;
         private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Timer tmrDog;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Timer timer2;
-        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.Timer tmrPanther;
+        private System.Windows.Forms.Timer tmrHamster;
+        private System.Windows.Forms.Timer tmrElephant;
         private System.Windows.Forms.PictureBox picDog1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox picDog4;
+        private System.Windows.Forms.PictureBox picDog3;
+        private System.Windows.Forms.PictureBox picDog2;
+        private System.Windows.Forms.Timer tmrPanda;
     }
 }
 

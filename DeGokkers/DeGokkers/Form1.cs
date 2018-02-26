@@ -68,5 +68,42 @@ namespace DeGokkers
 
         }
 
+        private void btnStart_Click(object sender, EventArgs e)
+        {
+            tmrDog.Enabled = true;
+           // tmrPanther.Enabled = true;
+           // tmrHamster.Enabled = true;
+           // tmrElephant.Enabled = true;
+           // tmrPanda.Enabled = true;
+        }
+
+        private void tmrDog_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(0, 10);
+
+            picDog1.Left += x;
+            x = rnd.Next(0, 10);
+            picDog2.Left += x;
+            x = rnd.Next(0, 10);
+            picDog3.Left += x;
+            x = rnd.Next(0, 10);
+            picDog4.Left += x;
+
+        }
+
+        private void tmrPanther_Tick(object sender, EventArgs e)
+        {
+            Random rnd = new Random();
+            int x = rnd.Next(0, 10);
+
+           //  picPanther1.Left += x;
+           //  x = rnd.Next(0, 10);
+           //  picPanther2.Left += x;
+           //  x = rnd.Next(0, 10);
+           //  picPanther3.Left += x;
+           //  x = rnd.Next(0, 10);
+           //  picPanther4.Left += x;
+        } 
     }
 }
