@@ -15,10 +15,14 @@ namespace DeGokkers
         private int BalancePlayerOne = 50;
         private int BalancePlayerTwo = 50;
         private int BalancePlayerThree = 50;
+        
         public Form1()
         {
 
             InitializeComponent();
+            lblMonOne.Text = "€" + BalancePlayerOne;
+            lblMonTwo.Text = "€" + BalancePlayerTwo;
+            lblMonThree.Text = "€" + BalancePlayerThree;
         }
 
         private void btnBet1_Click(object sender, EventArgs e)
@@ -188,5 +192,6 @@ namespace DeGokkers
         {
 
         }
+
     }
 }
