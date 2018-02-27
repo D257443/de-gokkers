@@ -305,6 +305,9 @@ namespace DeGokkers
             btnBet1.Visible = true;
             btnBet2.Visible = true;
             btnBet3.Visible = true;
+            HasBetOne = false;
+            HasBetTwo = false;
+            HasBetThree = false;
         }
         private void WinnerAssign()
         {
