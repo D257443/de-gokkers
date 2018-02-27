@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbAnSel = new System.Windows.Forms.ComboBox();
             this.lblMonTwo = new System.Windows.Forms.Label();
             this.lblMonThree = new System.Windows.Forms.Label();
             this.lblMonOne = new System.Windows.Forms.Label();
@@ -75,7 +76,6 @@
             this.tmrBack2 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack3 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack4 = new System.Windows.Forms.Timer(this.components);
-            this.cbAnSel = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
@@ -129,6 +129,14 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wed Bureau";
+            // 
+            // cbAnSel
+            // 
+            this.cbAnSel.FormattingEnabled = true;
+            this.cbAnSel.Location = new System.Drawing.Point(10, 176);
+            this.cbAnSel.Name = "cbAnSel";
+            this.cbAnSel.Size = new System.Drawing.Size(121, 21);
+            this.cbAnSel.TabIndex = 28;
             // 
             // lblMonTwo
             // 
@@ -500,6 +508,7 @@
             // tmrDog
             // 
             this.tmrDog.Interval = 50;
+            this.tmrDog.Tick += new System.EventHandler(this.tmrDog_Tick);
             // 
             // tmrPanther
             // 
@@ -593,14 +602,6 @@
             // 
             this.tmrBack4.Interval = 1;
             this.tmrBack4.Tick += new System.EventHandler(this.tmrBack4_Tick);
-            // 
-            // cbAnSel
-            // 
-            this.cbAnSel.FormattingEnabled = true;
-            this.cbAnSel.Location = new System.Drawing.Point(10, 176);
-            this.cbAnSel.Name = "cbAnSel";
-            this.cbAnSel.Size = new System.Drawing.Size(121, 21);
-            this.cbAnSel.TabIndex = 28;
             // 
             // Form1
             // 
