@@ -320,7 +320,7 @@ namespace DeGokkers
             {
                 BalancePlayerThree += Bet3 * 2;
             }
-            UpdateMoney();
+            ResetToStart();
         }
 
 
