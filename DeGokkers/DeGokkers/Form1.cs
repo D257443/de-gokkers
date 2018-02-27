@@ -15,7 +15,11 @@ namespace DeGokkers
         private int BalancePlayerOne = 50;
         private int BalancePlayerTwo = 50;
         private int BalancePlayerThree = 50;
-        
+        private bool HasBetOne;
+        private bool HasBetTwo;
+        private bool HasBetThree;
+
+
         public Form1()
         {
 
@@ -34,6 +38,9 @@ namespace DeGokkers
             if (btnPlayer1.Checked)
             {
                 lblPlayer1.Text = btnPlayer1.Text + " heeft " + Bet1 + " ingezet op nummer " + AnimalNumber1 + ".";
+                BalancePlayerOne -= Bet1;
+                UpdateMoney();
+                HasBetOne = true;
             }
         }
 
@@ -45,6 +52,9 @@ namespace DeGokkers
             if (btnPlayer2.Checked)
             {
                 lblPlayer2.Text = btnPlayer2.Text + " heeft " + Bet2 + " ingezet op nummer " + AnimalNumber2 + ".";
+                BalancePlayerTwo -= Bet2;
+                UpdateMoney();
+                HasBetTwo = true;
             }
         }
 
@@ -56,6 +66,9 @@ namespace DeGokkers
             if (btnPlayer3.Checked)
             {
                 lblPlayer3.Text = btnPlayer3.Text + " heeft " + Bet3 + " ingezet op nummer " + AnimalNumber3 + ".";
+                BalancePlayerThree -= Bet3;
+                UpdateMoney();
+                HasBetThree = true;
             }
         }
 
@@ -233,6 +246,13 @@ namespace DeGokkers
                 btnStart.Visible = true;
             }
         }
+        private void UpdateMoney()
+        {
+            lblMonOne.Text = "€" + BalancePlayerOne;
+            lblMonTwo.Text = "€" + BalancePlayerTwo;
+            lblMonThree.Text = "€" + BalancePlayerThree;
+        }
+
 
     }
 }

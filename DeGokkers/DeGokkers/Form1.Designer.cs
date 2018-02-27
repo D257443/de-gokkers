@@ -131,7 +131,7 @@
             // lblMonTwo
             // 
             this.lblMonTwo.AutoSize = true;
-            this.lblMonTwo.Location = new System.Drawing.Point(525, 126);
+            this.lblMonTwo.Location = new System.Drawing.Point(537, 126);
             this.lblMonTwo.Name = "lblMonTwo";
             this.lblMonTwo.Size = new System.Drawing.Size(35, 13);
             this.lblMonTwo.TabIndex = 27;
@@ -140,7 +140,7 @@
             // lblMonThree
             // 
             this.lblMonThree.AutoSize = true;
-            this.lblMonThree.Location = new System.Drawing.Point(525, 149);
+            this.lblMonThree.Location = new System.Drawing.Point(538, 149);
             this.lblMonThree.Name = "lblMonThree";
             this.lblMonThree.Size = new System.Drawing.Size(35, 13);
             this.lblMonThree.TabIndex = 26;
@@ -149,7 +149,7 @@
             // lblMonOne
             // 
             this.lblMonOne.AutoSize = true;
-            this.lblMonOne.Location = new System.Drawing.Point(525, 105);
+            this.lblMonOne.Location = new System.Drawing.Point(538, 105);
             this.lblMonOne.Name = "lblMonOne";
             this.lblMonOne.Size = new System.Drawing.Size(35, 13);
             this.lblMonOne.TabIndex = 25;
@@ -354,10 +354,11 @@
             this.lblPlayer2.AutoSize = true;
             this.lblPlayer2.BackColor = System.Drawing.SystemColors.Window;
             this.lblPlayer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer2.Location = new System.Drawing.Point(369, 126);
-            this.lblPlayer2.MinimumSize = new System.Drawing.Size(150, 0);
+            this.lblPlayer2.MinimumSize = new System.Drawing.Size(170, 0);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(150, 15);
+            this.lblPlayer2.Size = new System.Drawing.Size(170, 15);
             this.lblPlayer2.TabIndex = 9;
             // 
             // lblPlayer1
@@ -366,10 +367,11 @@
             this.lblPlayer1.BackColor = System.Drawing.SystemColors.Window;
             this.lblPlayer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPlayer1.Cursor = System.Windows.Forms.Cursors.SizeAll;
+            this.lblPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer1.Location = new System.Drawing.Point(369, 105);
-            this.lblPlayer1.MinimumSize = new System.Drawing.Size(150, 0);
+            this.lblPlayer1.MinimumSize = new System.Drawing.Size(170, 0);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(150, 15);
+            this.lblPlayer1.Size = new System.Drawing.Size(170, 15);
             this.lblPlayer1.TabIndex = 8;
             // 
             // lblPlayer3
@@ -377,10 +379,11 @@
             this.lblPlayer3.AutoSize = true;
             this.lblPlayer3.BackColor = System.Drawing.SystemColors.Window;
             this.lblPlayer3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblPlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPlayer3.Location = new System.Drawing.Point(369, 149);
-            this.lblPlayer3.MinimumSize = new System.Drawing.Size(150, 0);
+            this.lblPlayer3.MinimumSize = new System.Drawing.Size(170, 0);
             this.lblPlayer3.Name = "lblPlayer3";
-            this.lblPlayer3.Size = new System.Drawing.Size(150, 15);
+            this.lblPlayer3.Size = new System.Drawing.Size(170, 15);
             this.lblPlayer3.TabIndex = 8;
             // 
             // label3
