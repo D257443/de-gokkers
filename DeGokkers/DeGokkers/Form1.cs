@@ -23,6 +23,7 @@ namespace DeGokkers
             lblMonOne.Text = "€" + BalancePlayerOne;
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
+            button1.Visible = false;
         }
 
         private void btnBet1_Click(object sender, EventArgs e)
@@ -101,6 +102,7 @@ namespace DeGokkers
             {
                 tmrDog.Enabled = false;
                 btnStart.Visible = false;
+                button1.Visible = true;
             }
         }
 
@@ -194,6 +196,8 @@ namespace DeGokkers
             if (picDog1.Location.X == 12)
             {
                 tmrBack1.Enabled = false;
+                button1.Visible = false;
+                btnStart.Visible = true;
             }
         }
 
@@ -203,6 +207,8 @@ namespace DeGokkers
             if (picDog2.Location.X == 12)
             {
                 tmrBack2.Enabled = false;
+                button1.Visible = false;
+                btnStart.Visible = true;
             }
         }
 
@@ -212,6 +218,8 @@ namespace DeGokkers
             if (picDog3.Location.X == 12)
             {
                 tmrBack3.Enabled = false;
+                button1.Visible = false;
+                btnStart.Visible = true;
             }
         }
 
@@ -221,6 +229,8 @@ namespace DeGokkers
             if (picDog4.Location.X == 12)
             {
                 tmrBack4.Enabled = false;
+                button1.Visible = false;
+                btnStart.Visible = true;
             }
         }
 
