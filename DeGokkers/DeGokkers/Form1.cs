@@ -27,14 +27,20 @@ namespace DeGokkers
         private int AnimalNumber3 = 0;
 
 
+       
+
+
+
         public Form1()
         {
 
+            
             InitializeComponent();
             lblMonOne.Text = "€" + BalancePlayerOne;
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
             button1.Visible = false;
+            
             cbAnSel.Items.Add("Dog");
             cbAnSel.Items.Add("Elephant");
             cbAnSel.Items.Add("");
@@ -124,39 +130,39 @@ namespace DeGokkers
                 Random rnd = new Random();
                 int x = rnd.Next(0, 10);
 
-                picDog1.Left += x;
+                pic1.Left += x;
                 x = rnd.Next(0, 10);
-                picDog2.Left += x;
+                pic2.Left += x;
                 x = rnd.Next(0, 10);
-                picDog3.Left += x;
+                pic3.Left += x;
                 x = rnd.Next(0, 10);
-                picDog4.Left += x;
+                pic4.Left += x;
 
-                if (picDog1.Location.X >= 500 || picDog2.Location.X >= 500 || picDog3.Location.X >= 500 || picDog4.Location.X >= 500)
+                if (pic1.Location.X >= 500 || pic2.Location.X >= 500 || pic3.Location.X >= 500 || pic4.Location.X >= 500)
                 {
                     tmrDog.Enabled = false;
                     btnStart.Visible = false;
                     button1.Visible = true;
                 }
-                if (picDog1.Location.X >= 500)
+                if (pic1.Location.X >= 500)
                 {
                     MessageBox.Show("Hond 1 heeft gewonnen");
                     Winner = 1;
                     WinnerAssign();
                 }
-                else if (picDog2.Location.X >= 500)
+                else if (pic2.Location.X >= 500)
                 {
                     MessageBox.Show("Hond 2 heeft gewonnen");
                     Winner = 2;
                     WinnerAssign();
                 }
-                else if (picDog3.Location.X >= 500)
+                else if (pic3.Location.X >= 500)
                 {
                     MessageBox.Show("Hond 3 heeft gewonnen");
                     Winner = 3;
                     WinnerAssign();
                 }
-                else if (picDog4.Location.X >= 500)
+                else if (pic4.Location.X >= 500)
                 {
                     MessageBox.Show("Hond 4 heeft gewonnen");
                     Winner = 4;
@@ -254,8 +260,8 @@ namespace DeGokkers
 
         private void tmrBack1_Tick(object sender, EventArgs e)
         {
-            picDog1.Left -= 1;
-            if (picDog1.Location.X == 12)
+            pic1.Left -= 1;
+            if (pic1.Location.X == 12)
             {
                 tmrBack1.Enabled = false;
                 button1.Visible = false;
@@ -265,8 +271,8 @@ namespace DeGokkers
 
         private void tmrBack2_Tick(object sender, EventArgs e)
         {
-            picDog2.Left -= 1;
-            if (picDog2.Location.X == 12)
+            pic2.Left -= 1;
+            if (pic2.Location.X == 12)
             {
                 tmrBack2.Enabled = false;
                 button1.Visible = false;
@@ -276,8 +282,8 @@ namespace DeGokkers
 
         private void tmrBack3_Tick(object sender, EventArgs e)
         {
-            picDog3.Left -= 1;
-            if (picDog3.Location.X == 12)
+            pic3.Left -= 1;
+            if (pic3.Location.X == 12)
             {
                 tmrBack3.Enabled = false;
                 button1.Visible = false;
@@ -287,8 +293,8 @@ namespace DeGokkers
 
         private void tmrBack4_Tick(object sender, EventArgs e)
         {
-            picDog4.Left -= 1;
-            if (picDog4.Location.X == 12)
+            pic4.Left -= 1;
+            if (pic4.Location.X == 12)
             {
                 tmrBack4.Enabled = false;
                 button1.Visible = false;
