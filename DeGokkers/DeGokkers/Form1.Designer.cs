@@ -158,9 +158,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.Location = new System.Drawing.Point(428, 203);
+            this.button1.Location = new System.Drawing.Point(339, 176);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 23);
+            this.button1.Size = new System.Drawing.Size(200, 81);
             this.button1.TabIndex = 24;
             this.button1.Text = "Loop terug";
             this.button1.UseVisualStyleBackColor = true;
@@ -169,7 +169,7 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.btnStart.Location = new System.Drawing.Point(369, 176);
+            this.btnStart.Location = new System.Drawing.Point(339, 176);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(200, 81);
             this.btnStart.TabIndex = 23;
@@ -355,10 +355,10 @@
             this.lblPlayer2.BackColor = System.Drawing.SystemColors.Window;
             this.lblPlayer2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPlayer2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2.Location = new System.Drawing.Point(369, 126);
-            this.lblPlayer2.MinimumSize = new System.Drawing.Size(170, 0);
+            this.lblPlayer2.Location = new System.Drawing.Point(339, 126);
+            this.lblPlayer2.MinimumSize = new System.Drawing.Size(200, 0);
             this.lblPlayer2.Name = "lblPlayer2";
-            this.lblPlayer2.Size = new System.Drawing.Size(170, 15);
+            this.lblPlayer2.Size = new System.Drawing.Size(200, 15);
             this.lblPlayer2.TabIndex = 9;
             // 
             // lblPlayer1
@@ -368,10 +368,10 @@
             this.lblPlayer1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPlayer1.Cursor = System.Windows.Forms.Cursors.SizeAll;
             this.lblPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer1.Location = new System.Drawing.Point(369, 105);
-            this.lblPlayer1.MinimumSize = new System.Drawing.Size(170, 0);
+            this.lblPlayer1.Location = new System.Drawing.Point(339, 105);
+            this.lblPlayer1.MinimumSize = new System.Drawing.Size(200, 0);
             this.lblPlayer1.Name = "lblPlayer1";
-            this.lblPlayer1.Size = new System.Drawing.Size(170, 15);
+            this.lblPlayer1.Size = new System.Drawing.Size(200, 15);
             this.lblPlayer1.TabIndex = 8;
             // 
             // lblPlayer3
@@ -380,10 +380,10 @@
             this.lblPlayer3.BackColor = System.Drawing.SystemColors.Window;
             this.lblPlayer3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblPlayer3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer3.Location = new System.Drawing.Point(369, 149);
-            this.lblPlayer3.MinimumSize = new System.Drawing.Size(170, 0);
+            this.lblPlayer3.Location = new System.Drawing.Point(339, 149);
+            this.lblPlayer3.MinimumSize = new System.Drawing.Size(200, 0);
             this.lblPlayer3.Name = "lblPlayer3";
-            this.lblPlayer3.Size = new System.Drawing.Size(170, 15);
+            this.lblPlayer3.Size = new System.Drawing.Size(200, 15);
             this.lblPlayer3.TabIndex = 8;
             // 
             // label3

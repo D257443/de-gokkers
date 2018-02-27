@@ -18,6 +18,13 @@ namespace DeGokkers
         private bool HasBetOne;
         private bool HasBetTwo;
         private bool HasBetThree;
+        private int Winner;
+        private int Bet1;
+        private int Bet2;
+        private int Bet3;
+        private int AnimalNumber1;
+        private int AnimalNumber2;
+        private int AnimalNumber3;
 
 
         public Form1()
@@ -32,7 +39,7 @@ namespace DeGokkers
 
         private void btnBet1_Click(object sender, EventArgs e)
         {
-            int Bet1 = Decimal.ToInt32(inpMoney1.Value);
+            Bet1 = Decimal.ToInt32(inpMoney1.Value);
             int AnimalNumber1 = Decimal.ToInt32(inpAnNum1.Value);
 
             if (btnPlayer1.Checked)
@@ -40,13 +47,14 @@ namespace DeGokkers
                 lblPlayer1.Text = btnPlayer1.Text + " heeft " + Bet1 + " ingezet op nummer " + AnimalNumber1 + ".";
                 BalancePlayerOne -= Bet1;
                 UpdateMoney();
+                btnBet1.Visible = false;
                 HasBetOne = true;
             }
         }
 
         private void btnBet2_Click(object sender, EventArgs e)
         {
-            int Bet2 = Decimal.ToInt32(inpMoney2.Value);
+            Bet2 = Decimal.ToInt32(inpMoney2.Value);
             int AnimalNumber2 = Decimal.ToInt32(inpAnNum2.Value);
 
             if (btnPlayer2.Checked)
@@ -54,13 +62,14 @@ namespace DeGokkers
                 lblPlayer2.Text = btnPlayer2.Text + " heeft " + Bet2 + " ingezet op nummer " + AnimalNumber2 + ".";
                 BalancePlayerTwo -= Bet2;
                 UpdateMoney();
+                btnBet2.Visible = false;
                 HasBetTwo = true;
             }
         }
 
         private void btnBet3_Click(object sender, EventArgs e)
         {
-            int Bet3 = Decimal.ToInt32(inpMoney3.Value);
+            Bet3 = Decimal.ToInt32(inpMoney3.Value);
             int AnimalNumber3 = Decimal.ToInt32(inpAnNum3.Value);
 
             if (btnPlayer3.Checked)
@@ -68,6 +77,7 @@ namespace DeGokkers
                 lblPlayer3.Text = btnPlayer3.Text + " heeft " + Bet3 + " ingezet op nummer " + AnimalNumber3 + ".";
                 BalancePlayerThree -= Bet3;
                 UpdateMoney();
+                btnBet3.Visible = false;
                 HasBetThree = true;
             }
         }
@@ -120,18 +130,22 @@ namespace DeGokkers
             if(picDog1.Location.X >= 499)
             {
                 MessageBox.Show("Hond 1 heeft gewonnen");
+                Winner = 1;
             }
             else if (picDog2.Location.X >= 499)
             {
                 MessageBox.Show("Hond 2 heeft gewonnen");
+                Winner = 2;
             }
             else if (picDog3.Location.X >= 499)
             {
                 MessageBox.Show("Hond 3 heeft gewonnen");
+                Winner = 3;
             }
             else if (picDog4.Location.X >= 499)
             {
                 MessageBox.Show("Hond 4 heeft gewonnen");
+                Winner = 4;
             }
         }
 
@@ -267,6 +281,17 @@ namespace DeGokkers
             lblMonOne.Text = "€" + BalancePlayerOne;
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
+            btnBet1.Visible = true;
+            btnBet2.Visible = true;
+            btnBet3.Visible = true;
+        }
+        private void WinnerAssign()
+        {
+            if (Winner == AnimalNumber1)
+            {
+                BalancePlayerOne += Bet1 * 2;
+            }
+            if ()
         }
 
 
