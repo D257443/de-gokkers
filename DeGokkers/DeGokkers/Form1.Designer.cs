@@ -67,6 +67,11 @@
             this.picDog3 = new System.Windows.Forms.PictureBox();
             this.picDog2 = new System.Windows.Forms.PictureBox();
             this.tmrPanda = new System.Windows.Forms.Timer(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.tmrBack1 = new System.Windows.Forms.Timer(this.components);
+            this.tmrBack2 = new System.Windows.Forms.Timer(this.components);
+            this.tmrBack3 = new System.Windows.Forms.Timer(this.components);
+            this.tmrBack4 = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
@@ -83,6 +88,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.btnStart);
             this.groupBox1.Controls.Add(this.btnAddName);
             this.groupBox1.Controls.Add(this.btnName2);
@@ -520,6 +526,34 @@
             this.tmrPanda.Interval = 80;
             this.tmrPanda.Tick += new System.EventHandler(this.tmrPanda_Tick);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.button1.Location = new System.Drawing.Point(489, 234);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 23);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Loop terug";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // tmrBack1
+            // 
+            this.tmrBack1.Interval = 1;
+            this.tmrBack1.Tick += new System.EventHandler(this.tmrBack1_Tick);
+            // 
+            // tmrBack2
+            // 
+            this.tmrBack2.Interval = 1;
+            // 
+            // tmrBack3
+            // 
+            this.tmrBack3.Interval = 1;
+            // 
+            // tmrBack4
+            // 
+            this.tmrBack4.Interval = 1;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -589,6 +623,11 @@
         private System.Windows.Forms.PictureBox picDog3;
         private System.Windows.Forms.PictureBox picDog2;
         private System.Windows.Forms.Timer tmrPanda;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer tmrBack1;
+        private System.Windows.Forms.Timer tmrBack2;
+        private System.Windows.Forms.Timer tmrBack3;
+        private System.Windows.Forms.Timer tmrBack4;
     }
 }
 

@@ -93,6 +93,7 @@ namespace DeGokkers
             if(picDog1.Location.X >= 500 || picDog2.Location.X >= 500 || picDog3.Location.X >= 500 || picDog4.Location.X >= 500)
             {
                 tmrDog.Enabled = false;
+                btnStart.Visible = false;
             }
         }
 
@@ -170,6 +171,19 @@ namespace DeGokkers
             {
           //      tmrPanda.Enabled = false;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            tmrBack1.Enabled = true;
+            tmrBack2.Enabled = true;
+            tmrBack3.Enabled = true;
+            tmrBack4.Enabled = true;             
+        }
+
+        private void tmrBack1_Tick(object sender, EventArgs e)
+        {
+
         }
     }
 }
