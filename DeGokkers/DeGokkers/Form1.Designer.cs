@@ -545,14 +545,17 @@
             // tmrBack2
             // 
             this.tmrBack2.Interval = 1;
+            this.tmrBack2.Tick += new System.EventHandler(this.tmrBack2_Tick);
             // 
             // tmrBack3
             // 
             this.tmrBack3.Interval = 1;
+            this.tmrBack3.Tick += new System.EventHandler(this.tmrBack3_Tick);
             // 
             // tmrBack4
             // 
             this.tmrBack4.Interval = 1;
+            this.tmrBack4.Tick += new System.EventHandler(this.tmrBack4_Tick);
             // 
             // Form1
             // 

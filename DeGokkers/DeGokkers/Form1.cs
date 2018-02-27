@@ -183,7 +183,38 @@ namespace DeGokkers
 
         private void tmrBack1_Tick(object sender, EventArgs e)
         {
+            picDog1.Left -= 1;
+            if (picDog1.Location.X == 12)
+            {
+                tmrBack1.Enabled = false;
+            }
+        }
 
+        private void tmrBack2_Tick(object sender, EventArgs e)
+        {
+            picDog2.Left -= 1;
+            if (picDog2.Location.X == 12)
+            {
+                tmrBack2.Enabled = false;
+            }
+        }
+
+        private void tmrBack3_Tick(object sender, EventArgs e)
+        {
+            picDog3.Left -= 1;
+            if (picDog3.Location.X == 12)
+            {
+                tmrBack3.Enabled = false;
+            }
+        }
+
+        private void tmrBack4_Tick(object sender, EventArgs e)
+        {
+            picDog4.Left -= 1;
+            if (picDog4.Location.X == 12)
+            {
+                tmrBack4.Enabled = false;
+            }
         }
     }
 }
