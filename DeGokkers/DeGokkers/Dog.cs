@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace DeGokkers
 {
-    class Dog : Form1()
+    class Dog : Form1
     {
-        private void Tick(object sender, EventArgs e)
+        private void tmrDog_Tick(object sender, EventArgs e)
         {
             
             Random rnd = new Random();

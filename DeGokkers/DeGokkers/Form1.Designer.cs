@@ -168,7 +168,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.Location = new System.Drawing.Point(339, 176);
+            this.button1.Location = new System.Drawing.Point(355, 177);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(200, 81);
             this.button1.TabIndex = 24;
@@ -179,7 +179,7 @@
             // btnStart
             // 
             this.btnStart.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F);
-            this.btnStart.Location = new System.Drawing.Point(339, 176);
+            this.btnStart.Location = new System.Drawing.Point(355, 177);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(200, 81);
             this.btnStart.TabIndex = 23;
@@ -508,7 +508,7 @@
             // tmrDog
             // 
             this.tmrDog.Interval = 50;
-            
+            this.tmrDog.Tick += new System.EventHandler(this.tmrDog_Tick);
             // 
             // tmrPanther
             // 
@@ -662,17 +662,10 @@
         private System.Windows.Forms.RadioButton btnName3;
         private System.Windows.Forms.RadioButton btnName1;
         private System.Windows.Forms.TextBox txtInpName;
-        private System.Windows.Forms.Button btnStart;
-        private System.Windows.Forms.Timer tmrDog;
         private System.Windows.Forms.Timer tmrPanther;
         private System.Windows.Forms.Timer tmrHamster;
         private System.Windows.Forms.Timer tmrElephant;
-        private System.Windows.Forms.PictureBox picDog1;
-        private System.Windows.Forms.PictureBox picDog4;
-        private System.Windows.Forms.PictureBox picDog3;
-        private System.Windows.Forms.PictureBox picDog2;
         private System.Windows.Forms.Timer tmrPanda;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer tmrBack1;
         private System.Windows.Forms.Timer tmrBack2;
         private System.Windows.Forms.Timer tmrBack3;
@@ -681,6 +674,13 @@
         private System.Windows.Forms.Label lblMonThree;
         private System.Windows.Forms.Label lblMonOne;
         private System.Windows.Forms.ComboBox cbAnSel;
+        public System.Windows.Forms.Timer tmrDog;
+        protected System.Windows.Forms.Button btnStart;
+        protected System.Windows.Forms.Button button1;
+        protected System.Windows.Forms.PictureBox picDog1;
+        protected System.Windows.Forms.PictureBox picDog4;
+        protected System.Windows.Forms.PictureBox picDog3;
+        protected System.Windows.Forms.PictureBox picDog2;
     }
 }
 

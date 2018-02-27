@@ -18,7 +18,7 @@ namespace DeGokkers
         private bool HasBetOne;
         private bool HasBetTwo;
         private bool HasBetThree;
-        private int Winner;
+        protected int Winner;
         private int Bet1;
         private int Bet2;
         private int Bet3;
@@ -313,7 +313,7 @@ namespace DeGokkers
             HasBetTwo = false;
             HasBetThree = false;
         }
-        private void WinnerAssign()
+        protected void WinnerAssign()
         {
             if (Winner == AnimalNumber1)
             {
