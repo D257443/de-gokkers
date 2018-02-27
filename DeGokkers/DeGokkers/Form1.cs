@@ -43,7 +43,7 @@ namespace DeGokkers
         private void btnBet1_Click(object sender, EventArgs e)
         {
             Bet1 = Decimal.ToInt32(inpMoney1.Value);
-            AnimalNumber1 = Decimal.ToInt32(inpAnNum1.Value);
+            int AnimalNumber1 = Decimal.ToInt32(inpAnNum1.Value);
 
             if (btnPlayer1.Checked)
             {
@@ -58,7 +58,7 @@ namespace DeGokkers
         private void btnBet2_Click(object sender, EventArgs e)
         {
             Bet2 = Decimal.ToInt32(inpMoney2.Value);
-            AnimalNumber2 = Decimal.ToInt32(inpAnNum2.Value);
+            int AnimalNumber2 = Decimal.ToInt32(inpAnNum2.Value);
 
             if (btnPlayer2.Checked)
             {
@@ -66,14 +66,14 @@ namespace DeGokkers
                 BalancePlayerTwo -= Bet2;
                 UpdateMoney();
                 btnBet2.Visible = false;
-                HasBetTwo = false;
+                HasBetTwo = true;
             }
         }
 
         private void btnBet3_Click(object sender, EventArgs e)
         {
             Bet3 = Decimal.ToInt32(inpMoney3.Value);
-            AnimalNumber3 = Decimal.ToInt32(inpAnNum3.Value);
+            int AnimalNumber3 = Decimal.ToInt32(inpAnNum3.Value);
 
             if (btnPlayer3.Checked)
             {
