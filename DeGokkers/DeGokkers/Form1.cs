@@ -101,7 +101,14 @@ namespace DeGokkers
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            tmrDog.Enabled = true;
+            if (HasBetOne == true && HasBetTwo == true && HasBetThree == true)
+            {
+                tmrDog.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Not everyone has bet");
+            }
            // tmrPanther.Enabled = true;
            // tmrHamster.Enabled = true;
            // tmrElephant.Enabled = true;
@@ -147,6 +154,7 @@ namespace DeGokkers
                 MessageBox.Show("Hond 4 heeft gewonnen");
                 Winner = 4;
             }
+            WinnerAssign();
         }
 
         private void tmrPanther_Tick(object sender, EventArgs e)
@@ -281,6 +289,12 @@ namespace DeGokkers
             lblMonOne.Text = "€" + BalancePlayerOne;
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
+        }
+        private void ResetToStart()
+        {
+            lblMonOne.Text = "€" + BalancePlayerOne;
+            lblMonTwo.Text = "€" + BalancePlayerTwo;
+            lblMonThree.Text = "€" + BalancePlayerThree;
             btnBet1.Visible = true;
             btnBet2.Visible = true;
             btnBet3.Visible = true;
@@ -291,7 +305,15 @@ namespace DeGokkers
             {
                 BalancePlayerOne += Bet1 * 2;
             }
-            if ()
+            if (Winner == AnimalNumber2)
+            {
+                BalancePlayerTwo += Bet2 * 2;
+            }
+            if (Winner == AnimalNumber3)
+            {
+                BalancePlayerThree += Bet3 * 2;
+            }
+            UpdateMoney();
         }
 
 
