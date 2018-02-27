@@ -75,6 +75,7 @@
             this.tmrBack2 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack3 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack4 = new System.Windows.Forms.Timer(this.components);
+            this.cbAnSel = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
@@ -91,6 +92,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.cbAnSel);
             this.groupBox1.Controls.Add(this.lblMonTwo);
             this.groupBox1.Controls.Add(this.lblMonThree);
             this.groupBox1.Controls.Add(this.lblMonOne);
@@ -593,6 +595,14 @@
             this.tmrBack4.Interval = 1;
             this.tmrBack4.Tick += new System.EventHandler(this.tmrBack4_Tick);
             // 
+            // cbAnSel
+            // 
+            this.cbAnSel.FormattingEnabled = true;
+            this.cbAnSel.Location = new System.Drawing.Point(10, 176);
+            this.cbAnSel.Name = "cbAnSel";
+            this.cbAnSel.Size = new System.Drawing.Size(121, 21);
+            this.cbAnSel.TabIndex = 28;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -670,6 +680,7 @@
         private System.Windows.Forms.Label lblMonTwo;
         private System.Windows.Forms.Label lblMonThree;
         private System.Windows.Forms.Label lblMonOne;
+        private System.Windows.Forms.ComboBox cbAnSel;
     }
 }
 

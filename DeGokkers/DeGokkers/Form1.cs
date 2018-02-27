@@ -35,6 +35,9 @@ namespace DeGokkers
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
             button1.Visible = false;
+            cbAnSel.Items.Add("Dog");
+            cbAnSel.Items.Add("Elephant");
+            cbAnSel.Items.Add("");
         }
 
         private void btnBet1_Click(object sender, EventArgs e)
