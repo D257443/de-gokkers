@@ -117,6 +117,22 @@ namespace DeGokkers
                 btnStart.Visible = false;
                 button1.Visible = true;
             }
+            if(picDog1.Location.X >= 499)
+            {
+                MessageBox.Show("Hond 1 heeft gewonnen");
+            }
+            else if (picDog2.Location.X >= 499)
+            {
+                MessageBox.Show("Hond 2 heeft gewonnen");
+            }
+            else if (picDog3.Location.X >= 499)
+            {
+                MessageBox.Show("Hond 3 heeft gewonnen");
+            }
+            else if (picDog4.Location.X >= 499)
+            {
+                MessageBox.Show("Hond 4 heeft gewonnen");
+            }
         }
 
         private void tmrPanther_Tick(object sender, EventArgs e)
@@ -252,6 +268,8 @@ namespace DeGokkers
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
         }
+
+
 
 
     }
