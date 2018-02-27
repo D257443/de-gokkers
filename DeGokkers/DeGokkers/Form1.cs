@@ -138,23 +138,27 @@ namespace DeGokkers
             {
                 MessageBox.Show("Hond 1 heeft gewonnen");
                 Winner = 1;
+                WinnerAssign();
             }
             else if (picDog2.Location.X >= 499)
             {
                 MessageBox.Show("Hond 2 heeft gewonnen");
                 Winner = 2;
+                WinnerAssign();
             }
             else if (picDog3.Location.X >= 499)
             {
                 MessageBox.Show("Hond 3 heeft gewonnen");
                 Winner = 3;
+                WinnerAssign();
             }
             else if (picDog4.Location.X >= 499)
             {
                 MessageBox.Show("Hond 4 heeft gewonnen");
                 Winner = 4;
+                WinnerAssign();
             }
-            WinnerAssign();
+            
         }
 
         private void tmrPanther_Tick(object sender, EventArgs e)
