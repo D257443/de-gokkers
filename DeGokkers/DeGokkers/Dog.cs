@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace DeGokkers
 {
-    class Dog : Form1
+    class Dog : Form1()
     {
-        private void tmrDog_Tick(object sender, EventArgs e)
+        private void Tick(object sender, EventArgs e)
         {
+            
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
