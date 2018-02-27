@@ -12,6 +12,9 @@ namespace DeGokkers
 {
     public partial class Form1 : Form
     {
+        private int BalancePlayerOne = 50;
+        private int BalancePlayerTwo = 50;
+        private int BalancePlayerThree = 50;
         public Form1()
         {
 
