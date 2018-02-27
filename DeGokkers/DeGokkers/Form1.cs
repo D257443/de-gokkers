@@ -66,7 +66,7 @@ namespace DeGokkers
                 BalancePlayerTwo -= Bet2;
                 UpdateMoney();
                 btnBet2.Visible = false;
-                HasBetTwo = false;
+                HasBetTwo = true;
             }
         }
 
