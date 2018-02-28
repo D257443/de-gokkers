@@ -125,7 +125,7 @@ namespace DeGokkers
         }
 
 
-            private void tmrDog_Tick(object sender, EventArgs e)
+       /*     private void tmrDog_Tick(object sender, EventArgs e)
             {
                 Random rnd = new Random();
                 int x = rnd.Next(0, 10);
@@ -169,7 +169,7 @@ namespace DeGokkers
                     WinnerAssign();
                 }
 
-            }
+            }*/
         
     
 
