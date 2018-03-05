@@ -26,9 +26,11 @@ namespace DeGokkers
         private int AnimalNumber2 = 0;
         private int AnimalNumber3 = 0;
         protected string Animal;
+        protected int selectedIndex;
 
 
-       
+
+
 
 
 
@@ -113,23 +115,23 @@ namespace DeGokkers
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 0)
+            if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && selectedIndex == 0)
             {
                 tmrDog.Enabled = true;
             }
-            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 1)
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && selectedIndex == 1)
             {
                 tmrElephant.Enabled = true;
             }
-            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 2)
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && selectedIndex == 2)
             {
                 tmrHamster.Enabled = true;
             }
-            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 3)
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && selectedIndex == 3)
             {
                 tmrPanda.Enabled = true;
             }
-            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 4)
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && selectedIndex == 4)
             {
                 tmrPanther.Enabled = true;
             }
@@ -475,7 +477,7 @@ namespace DeGokkers
 
         private void btnAnimalChooser_Click(object sender, EventArgs e)
         {
-            int selectedIndex = cbAnSel.SelectedIndex;
+            selectedIndex = cbAnSel.SelectedIndex;
             Object selectedItem = cbAnSel.SelectedItem;
             btnAnimalChooser.Visible = false;
 
