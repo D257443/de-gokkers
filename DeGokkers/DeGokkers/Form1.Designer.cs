@@ -664,7 +664,6 @@
         private System.Windows.Forms.TextBox txtInpName;
         private System.Windows.Forms.Timer tmrPanther;
         private System.Windows.Forms.Timer tmrHamster;
-        private System.Windows.Forms.Timer tmrElephant;
         private System.Windows.Forms.Timer tmrPanda;
         private System.Windows.Forms.Timer tmrBack1;
         private System.Windows.Forms.Timer tmrBack2;
@@ -681,6 +680,7 @@
         protected System.Windows.Forms.PictureBox pic4;
         protected System.Windows.Forms.PictureBox pic3;
         protected System.Windows.Forms.PictureBox pic2;
+        protected System.Windows.Forms.Timer tmrElephant;
     }
 }
 

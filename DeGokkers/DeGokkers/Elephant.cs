@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DeGokkers
 {
-    class Elephant
+    class Elephant : Form1
     {
         private void tmrElephant_Tick(object sender, EventArgs e)
         {
