@@ -113,19 +113,30 @@ namespace DeGokkers
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            if (HasBetOne == true && HasBetTwo == true && HasBetThree == true)
+            if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 0)
             {
                 tmrDog.Enabled = true;
             }
-            else
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 1)
             {
+                tmrElephant.Enabled = true;
+            }
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 2)
+            {
+                tmrHamster.Enabled = true;
+            }
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 3)
+            {
+                tmrPanda.Enabled = true;
+            }
+            else if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && cbAnSel.SelectedIndex == 4)
+            {
+                tmrPanther.Enabled = true;
+            }
+            else {
                 MessageBox.Show("Not everyone has bet");
             }
-            // tmrPanther.Enabled = true;
-            // tmrHamster.Enabled = true;
-            // tmrElephant.Enabled = true;
-            // tmrPanda.Enabled = true;
-            tmrPanda.Enabled = true;
+            
             
         }
 
@@ -181,40 +192,99 @@ namespace DeGokkers
 
     private void tmrPanther_Tick(object sender, EventArgs e)
         {
+
+
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
-            //  picPanther1.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picPanther2.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picPanther3.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picPanther4.Left += x;
 
-           // if (picPanther1.Location.X >= 500 || picPanther2.Location.X >= 500 || picPanther3.Location.X >= 500 || picPanther4.Location.X >= 500)
+            pic1.Left += x;
+            x = rnd.Next(0, 10);
+            pic2.Left += x;
+            x = rnd.Next(0, 10);
+            pic3.Left += x;
+            x = rnd.Next(0, 10);
+            pic4.Left += x;
+
+            if (pic1.Location.X >= 500 || pic2.Location.X >= 500 || pic3.Location.X >= 500 || pic4.Location.X >= 500)
             {
-           //     tmrPanther.Enabled = false;
+                tmrPanther.Enabled = false;
+                btnStart.Visible = false;
+                button1.Visible = true;
             }
+            if (pic1.Location.X >= 500)
+            {
+                MessageBox.Show("Panther 1 heeft gewonnen");
+                Winner = 1;
+                WinnerAssign();
+            }
+            else if (pic2.Location.X >= 500)
+            {
+                MessageBox.Show("Panther 2 heeft gewonnen");
+                Winner = 2;
+                WinnerAssign();
+            }
+            else if (pic3.Location.X >= 500)
+            {
+                MessageBox.Show("Panther 3 heeft gewonnen");
+                Winner = 3;
+                WinnerAssign();
+            }
+            else if (pic4.Location.X >= 500)
+            {
+                MessageBox.Show("Panther 4 heeft gewonnen");
+                Winner = 4;
+                WinnerAssign();
+            }
+
         }
 
         private void tmrHamster_Tick(object sender, EventArgs e)
-        {
+        { 
+
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
-            //  picHmaster1.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picHmaster2.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picHmaster3.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picHmaster4.Left += x;
 
-           // if (picHamster1.Location.X >= 500 || picHamster2.Location.X >= 500 || picHamster3.Location.X >= 500 || picHamster4.Location.X >= 500)
+            pic1.Left += x;
+            x = rnd.Next(0, 10);
+            pic2.Left += x;
+            x = rnd.Next(0, 10);
+            pic3.Left += x;
+            x = rnd.Next(0, 10);
+            pic4.Left += x;
+
+            if (pic1.Location.X >= 500 || pic2.Location.X >= 500 || pic3.Location.X >= 500 || pic4.Location.X >= 500)
             {
-           //    tmrHamster.Enabled = false;
+                tmrHamster.Enabled = false;
+                btnStart.Visible = false;
+                button1.Visible = true;
             }
+            if (pic1.Location.X >= 500)
+            {
+                MessageBox.Show("Hamster 1 heeft gewonnen");
+                Winner = 1;
+                WinnerAssign();
+            }
+            else if (pic2.Location.X >= 500)
+            {
+                MessageBox.Show("Hamster 2 heeft gewonnen");
+                Winner = 2;
+                WinnerAssign();
+            }
+            else if (pic3.Location.X >= 500)
+            {
+                MessageBox.Show("Hamster 3 heeft gewonnen");
+                Winner = 3;
+                WinnerAssign();
+            }
+            else if (pic4.Location.X >= 500)
+            {
+                MessageBox.Show("Hamster 4 heeft gewonnen");
+                Winner = 4;
+                WinnerAssign();
+            }
+
         }
 
         private void tmrElephant_Tick(object sender, EventArgs e)
@@ -267,21 +337,50 @@ namespace DeGokkers
 
         private void tmrPanda_Tick(object sender, EventArgs e)
         {
+
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
-            //  picPanda1.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picPanda2.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picPanda3.Left += x;
-            //  x = rnd.Next(0, 10);
-            // picPanda4.Left += x;
 
-          //  if (picPanda1.Location.X >= 500 || picPanda2.Location.X >= 500 || picPanda3.Location.X >= 500 || picPanda4.Location.X >= 500)
+            pic1.Left += x;
+            x = rnd.Next(0, 10);
+            pic2.Left += x;
+            x = rnd.Next(0, 10);
+            pic3.Left += x;
+            x = rnd.Next(0, 10);
+            pic4.Left += x;
+
+            if (pic1.Location.X >= 500 || pic2.Location.X >= 500 || pic3.Location.X >= 500 || pic4.Location.X >= 500)
             {
-          //      tmrPanda.Enabled = false;
+                tmrPanda.Enabled = false;
+                btnStart.Visible = false;
+                button1.Visible = true;
             }
+            if (pic1.Location.X >= 500)
+            {
+                MessageBox.Show("Panda 1 heeft gewonnen");
+                Winner = 1;
+                WinnerAssign();
+            }
+            else if (pic2.Location.X >= 500)
+            {
+                MessageBox.Show("Panda 2 heeft gewonnen");
+                Winner = 2;
+                WinnerAssign();
+            }
+            else if (pic3.Location.X >= 500)
+            {
+                MessageBox.Show("Panda 3 heeft gewonnen");
+                Winner = 3;
+                WinnerAssign();
+            }
+            else if (pic4.Location.X >= 500)
+            {
+                MessageBox.Show("Panda 4 heeft gewonnen");
+                Winner = 4;
+                WinnerAssign();
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
