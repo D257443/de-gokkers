@@ -49,6 +49,7 @@ namespace DeGokkers
             cbAnSel.Items.Add("Hamster");
             cbAnSel.Items.Add("Panda");
             cbAnSel.Items.Add("Panther");
+            MessageBox.Show("Dankjewel voor je deeltenemen voor DeGokkers, we hebben je 50 euro gegeven om mee te starten, als je in de min staat gaat het ook van je eigen geld af...veel gok plezier!");
         }
 
         private void btnBet1_Click(object sender, EventArgs e)
