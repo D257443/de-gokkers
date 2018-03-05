@@ -477,7 +477,7 @@ namespace DeGokkers
         {
             int selectedIndex = cbAnSel.SelectedIndex;
             Object selectedItem = cbAnSel.SelectedItem;
-            btnAnimalChooser.Visible = true;
+            btnAnimalChooser.Visible = false;
 
             if(selectedIndex == 0)
             {
