@@ -44,7 +44,9 @@ namespace DeGokkers
             
             cbAnSel.Items.Add("Dog");
             cbAnSel.Items.Add("Elephant");
-            cbAnSel.Items.Add("");
+            cbAnSel.Items.Add("Hamster");
+            cbAnSel.Items.Add("Panda");
+            cbAnSel.Items.Add("Panther");
         }
 
         private void btnBet1_Click(object sender, EventArgs e)
@@ -124,10 +126,6 @@ namespace DeGokkers
             // tmrElephant.Enabled = true;
             // tmrPanda.Enabled = true;
             tmrPanda.Enabled = true;
-            
-        }
-        private void anmChooser()
-        {
             
         }
 
@@ -372,8 +370,46 @@ namespace DeGokkers
             ResetToStart();
         }
 
+        private void btnAnimalChooser_Click(object sender, EventArgs e)
+        {
+            int selectedIndex = cbAnSel.SelectedIndex;
+            Object selectedItem = cbAnSel.SelectedItem;
 
-
-
+            if(selectedIndex == 0)
+            {
+                pic1.Image = DeGokkers.Properties.Resources.dog1;
+                pic2.Image = DeGokkers.Properties.Resources.dog1;
+                pic3.Image = DeGokkers.Properties.Resources.dog1;
+                pic4.Image = DeGokkers.Properties.Resources.dog1;
+            }
+            if(selectedIndex == 1)
+            {
+                pic1.Image = DeGokkers.Properties.Resources.elephant;
+                pic2.Image = DeGokkers.Properties.Resources.elephant;
+                pic3.Image = DeGokkers.Properties.Resources.elephant;
+                pic4.Image = DeGokkers.Properties.Resources.elephant;
+            }
+            if(selectedIndex == 2)
+            {
+                pic1.Image = DeGokkers.Properties.Resources.hamster;
+                pic2.Image = DeGokkers.Properties.Resources.hamster;
+                pic3.Image = DeGokkers.Properties.Resources.hamster;
+                pic4.Image = DeGokkers.Properties.Resources.hamster;
+            }
+            if (selectedIndex == 3)
+            {
+                pic1.Image = DeGokkers.Properties.Resources.panda;
+                pic2.Image = DeGokkers.Properties.Resources.panda;
+                pic3.Image = DeGokkers.Properties.Resources.panda;
+                pic4.Image = DeGokkers.Properties.Resources.panda;
+            }
+            if (selectedIndex == 4)
+            {
+                pic1.Image = DeGokkers.Properties.Resources.panther;
+                pic2.Image = DeGokkers.Properties.Resources.panther;
+                pic3.Image = DeGokkers.Properties.Resources.panther;
+                pic4.Image = DeGokkers.Properties.Resources.panther;
+            }
+        }
     }
 }

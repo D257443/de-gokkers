@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btnAnimalChooser = new System.Windows.Forms.Button();
             this.cbAnSel = new System.Windows.Forms.ComboBox();
             this.lblMonTwo = new System.Windows.Forms.Label();
             this.lblMonThree = new System.Windows.Forms.Label();
@@ -76,7 +77,6 @@
             this.tmrBack2 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack3 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack4 = new System.Windows.Forms.Timer(this.components);
-            this.btnAnimalChooser = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
@@ -131,6 +131,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Wed Bureau";
+            // 
+            // btnAnimalChooser
+            // 
+            this.btnAnimalChooser.Location = new System.Drawing.Point(10, 204);
+            this.btnAnimalChooser.Name = "btnAnimalChooser";
+            this.btnAnimalChooser.Size = new System.Drawing.Size(75, 23);
+            this.btnAnimalChooser.TabIndex = 29;
+            this.btnAnimalChooser.Text = "Kies dier";
+            this.btnAnimalChooser.UseVisualStyleBackColor = true;
+            this.btnAnimalChooser.Click += new System.EventHandler(this.btnAnimalChooser_Click);
             // 
             // cbAnSel
             // 
@@ -604,15 +614,6 @@
             // 
             this.tmrBack4.Interval = 1;
             this.tmrBack4.Tick += new System.EventHandler(this.tmrBack4_Tick);
-            // 
-            // btnAnimalChooser
-            // 
-            this.btnAnimalChooser.Location = new System.Drawing.Point(10, 204);
-            this.btnAnimalChooser.Name = "btnAnimalChooser";
-            this.btnAnimalChooser.Size = new System.Drawing.Size(75, 23);
-            this.btnAnimalChooser.TabIndex = 29;
-            this.btnAnimalChooser.Text = "Kies dier";
-            this.btnAnimalChooser.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 

@@ -48,6 +48,9 @@
     <Compile Include="Dog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Elephant.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
