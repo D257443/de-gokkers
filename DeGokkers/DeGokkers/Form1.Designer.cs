@@ -76,6 +76,7 @@
             this.tmrBack2 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack3 = new System.Windows.Forms.Timer(this.components);
             this.tmrBack4 = new System.Windows.Forms.Timer(this.components);
+            this.btnAnimalChooser = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.inpAnNum3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.inpMoney3)).BeginInit();
@@ -92,6 +93,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.btnAnimalChooser);
             this.groupBox1.Controls.Add(this.cbAnSel);
             this.groupBox1.Controls.Add(this.lblMonTwo);
             this.groupBox1.Controls.Add(this.lblMonThree);
@@ -603,6 +605,15 @@
             this.tmrBack4.Interval = 1;
             this.tmrBack4.Tick += new System.EventHandler(this.tmrBack4_Tick);
             // 
+            // btnAnimalChooser
+            // 
+            this.btnAnimalChooser.Location = new System.Drawing.Point(10, 204);
+            this.btnAnimalChooser.Name = "btnAnimalChooser";
+            this.btnAnimalChooser.Size = new System.Drawing.Size(75, 23);
+            this.btnAnimalChooser.TabIndex = 29;
+            this.btnAnimalChooser.Text = "Kies dier";
+            this.btnAnimalChooser.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -681,6 +692,7 @@
         protected System.Windows.Forms.PictureBox pic3;
         protected System.Windows.Forms.PictureBox pic2;
         protected System.Windows.Forms.Timer tmrElephant;
+        private System.Windows.Forms.Button btnAnimalChooser;
     }
 }
 

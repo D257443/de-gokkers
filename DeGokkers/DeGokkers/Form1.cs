@@ -25,6 +25,7 @@ namespace DeGokkers
         private int AnimalNumber1 = 0;
         private int AnimalNumber2 = 0;
         private int AnimalNumber3 = 0;
+        protected string Animal;
 
 
        
@@ -220,21 +221,50 @@ namespace DeGokkers
 
         private void tmrElephant_Tick(object sender, EventArgs e)
         {
+
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
-            //  picElephant1.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picElephant2.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picElephant3.Left += x;
-            //  x = rnd.Next(0, 10);
-            //  picElephant4.Left += x;
 
-           // if (picElephant1.Location.X >= 500 || picElephant2.Location.X >= 500 || picElephant3.Location.X >= 500 || picElephant4.Location.X >= 500)
+            pic1.Left += x;
+            x = rnd.Next(0, 10);
+            pic2.Left += x;
+            x = rnd.Next(0, 10);
+            pic3.Left += x;
+            x = rnd.Next(0, 10);
+            pic4.Left += x;
+
+            if (pic1.Location.X >= 500 || pic2.Location.X >= 500 || pic3.Location.X >= 500 || pic4.Location.X >= 500)
             {
-           //     tmrElephant.Enabled = false;
+                tmrElephant.Enabled = false;
+                btnStart.Visible = false;
+                button1.Visible = true;
             }
+            if (pic1.Location.X >= 500)
+            {
+                MessageBox.Show("Olifant 1 heeft gewonnen");
+                Winner = 1;
+                WinnerAssign();
+            }
+            else if (pic2.Location.X >= 500)
+            {
+                MessageBox.Show("Olifant 2 heeft gewonnen");
+                Winner = 2;
+                WinnerAssign();
+            }
+            else if (pic3.Location.X >= 500)
+            {
+                MessageBox.Show("Olifant 3 heeft gewonnen");
+                Winner = 3;
+                WinnerAssign();
+            }
+            else if (pic4.Location.X >= 500)
+            {
+                MessageBox.Show("Olifant 4 heeft gewonnen");
+                Winner = 4;
+                WinnerAssign();
+            }
+
         }
 
         private void tmrPanda_Tick(object sender, EventArgs e)
