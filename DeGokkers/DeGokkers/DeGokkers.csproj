@@ -48,6 +48,9 @@
     <Compile Include="Dog.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Elephant.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +96,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\dog1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hamster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\panther.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\elephantEdited4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
