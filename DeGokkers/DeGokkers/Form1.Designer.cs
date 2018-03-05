@@ -530,7 +530,7 @@
             this.pic1.BackColor = System.Drawing.Color.White;
             this.pic1.Image = global::DeGokkers.Properties.Resources.dog1;
             this.pic1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic1.InitialImage")));
-            this.pic1.Location = new System.Drawing.Point(18, 12);
+            this.pic1.Location = new System.Drawing.Point(12, 12);
             this.pic1.Name = "pic1";
             this.pic1.Size = new System.Drawing.Size(82, 32);
             this.pic1.TabIndex = 2;

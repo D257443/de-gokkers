@@ -125,6 +125,10 @@ namespace DeGokkers
             tmrPanda.Enabled = true;
             
         }
+        private void anmChooser()
+        {
+            
+        }
 
 
             private void tmrDog_Tick(object sender, EventArgs e)

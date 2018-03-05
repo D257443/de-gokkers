@@ -11,10 +11,7 @@ namespace DeGokkers
     {
         protected void tmrDog_Tick(object sender, EventArgs e)
         {
-            pic1.Image = DeGokkers.Properties.Resources.dog1;
-            pic2.Image = DeGokkers.Properties.Resources.dog1;
-            pic3.Image = DeGokkers.Properties.Resources.dog1;
-            pic4.Image = DeGokkers.Properties.Resources.dog1;
+
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
             

@@ -10,10 +10,7 @@ namespace DeGokkers
     {
         private void tmrElephant_Tick(object sender, EventArgs e)
         {
-            pic1.Image = DeGokkers.Properties.Resources.elephant;
-            pic2.Image = DeGokkers.Properties.Resources.elephant;
-            pic3.Image = DeGokkers.Properties.Resources.elephant;
-            pic4.Image = DeGokkers.Properties.Resources.elephant;
+            
             Random rnd = new Random();
             int x = rnd.Next(0, 10);
 
