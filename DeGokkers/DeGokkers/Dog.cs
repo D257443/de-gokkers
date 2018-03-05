@@ -9,7 +9,7 @@ namespace DeGokkers
 {
     class Dog : Form1
     {
-        private void tmrDog_Tick(object sender, EventArgs e)
+        protected void tmrDog_Tick(object sender, EventArgs e)
         {
             pic1.Image = DeGokkers.Properties.Resources.dog1;
             pic2.Image = DeGokkers.Properties.Resources.dog1;

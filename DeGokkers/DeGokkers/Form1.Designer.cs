@@ -508,6 +508,7 @@
             // tmrDog
             // 
             this.tmrDog.Interval = 50;
+            this.tmrDog.Tick += new System.EventHandler(this.tmrDog_Tick);
             // 
             // tmrPanther
             // 

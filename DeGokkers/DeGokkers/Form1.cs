@@ -118,14 +118,16 @@ namespace DeGokkers
             {
                 MessageBox.Show("Not everyone has bet");
             }
-           // tmrPanther.Enabled = true;
-           // tmrHamster.Enabled = true;
-           // tmrElephant.Enabled = true;
-           // tmrPanda.Enabled = true;
+            // tmrPanther.Enabled = true;
+            // tmrHamster.Enabled = true;
+            // tmrElephant.Enabled = true;
+            // tmrPanda.Enabled = true;
+            tmrPanda.Enabled = true;
+            
         }
 
 
-       /*     private void tmrDog_Tick(object sender, EventArgs e)
+            private void tmrDog_Tick(object sender, EventArgs e)
             {
                 Random rnd = new Random();
                 int x = rnd.Next(0, 10);
@@ -169,7 +171,7 @@ namespace DeGokkers
                     WinnerAssign();
                 }
 
-            }*/
+            }
         
     
 
