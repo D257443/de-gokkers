@@ -28,7 +28,7 @@ namespace DeGokkers
             {
                 tmrElephant.Enabled = false;
                 btnStart.Visible = false;
-                button1.Visible = true;
+                btnBack.Visible = true;
             }
             if (pic1.Location.X >= 500)
             {

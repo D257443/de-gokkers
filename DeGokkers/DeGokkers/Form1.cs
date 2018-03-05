@@ -27,7 +27,7 @@ namespace DeGokkers
         private int AnimalNumber3 = 0;
         protected string Animal;
         protected int selectedIndex;
-
+        private bool HasChosen;
 
 
 
@@ -42,13 +42,10 @@ namespace DeGokkers
             lblMonOne.Text = "€" + BalancePlayerOne;
             lblMonTwo.Text = "€" + BalancePlayerTwo;
             lblMonThree.Text = "€" + BalancePlayerThree;
-            button1.Visible = false;
-            
-            cbAnSel.Items.Add("Dog");
-            cbAnSel.Items.Add("Elephant");
-            cbAnSel.Items.Add("Hamster");
-            cbAnSel.Items.Add("Panda");
-            cbAnSel.Items.Add("Panther");
+            btnBack.Visible = false;
+            cbAnSel.Text = "Hond";
+
+
             MessageBox.Show("Dankjewel voor je deeltenemen voor DeGokkers, we hebben je 50 euro gegeven om mee te starten, als je in de min staat gaat het ook van je eigen geld af...veel gok plezier!");
         }
 
@@ -116,6 +113,12 @@ namespace DeGokkers
 
         private void btnStart_Click(object sender, EventArgs e)
         {
+            if(HasChosen == false)
+            {
+                MessageBox.Show("Je moet een dier kiezen!");
+                return;
+            }
+            
             if (HasBetOne == true && HasBetTwo == true && HasBetThree == true && selectedIndex == 0)
             {
                 tmrDog.Enabled = true;
@@ -137,10 +140,10 @@ namespace DeGokkers
                 tmrPanther.Enabled = true;
             }
             else {
-                MessageBox.Show("Not everyone has bet");
+                MessageBox.Show("Nog niet iedereen heeft gewedt");
             }
-            
-            
+            btnAnimalChooser.Visible = false;
+
         }
 
 
@@ -161,7 +164,8 @@ namespace DeGokkers
                 {
                     tmrDog.Enabled = false;
                     btnStart.Visible = false;
-                    button1.Visible = true;
+                    btnBack.Visible = true;
+                    
                 }
                 if (pic1.Location.X >= 500)
                 {
@@ -213,7 +217,8 @@ namespace DeGokkers
             {
                 tmrPanther.Enabled = false;
                 btnStart.Visible = false;
-                button1.Visible = true;
+                btnBack.Visible = true;
+                
             }
             if (pic1.Location.X >= 500)
             {
@@ -261,7 +266,8 @@ namespace DeGokkers
             {
                 tmrHamster.Enabled = false;
                 btnStart.Visible = false;
-                button1.Visible = true;
+                btnBack.Visible = true;
+                
             }
             if (pic1.Location.X >= 500)
             {
@@ -309,7 +315,8 @@ namespace DeGokkers
             {
                 tmrElephant.Enabled = false;
                 btnStart.Visible = false;
-                button1.Visible = true;
+                btnBack.Visible = true;
+                
             }
             if (pic1.Location.X >= 500)
             {
@@ -357,7 +364,8 @@ namespace DeGokkers
             {
                 tmrPanda.Enabled = false;
                 btnStart.Visible = false;
-                button1.Visible = true;
+                btnBack.Visible = true;
+                
             }
             if (pic1.Location.X >= 500)
             {
@@ -400,7 +408,7 @@ namespace DeGokkers
             if (pic1.Location.X == 12)
             {
                 tmrBack1.Enabled = false;
-                button1.Visible = false;
+                btnBack.Visible = false;
                 btnStart.Visible = true;
                 btnAnimalChooser.Visible = true;
             }
@@ -412,7 +420,7 @@ namespace DeGokkers
             if (pic2.Location.X == 12)
             {
                 tmrBack2.Enabled = false;
-                button1.Visible = false;
+                btnBack.Visible = false;
                 btnStart.Visible = true;
                 btnAnimalChooser.Visible = true;
             }
@@ -424,7 +432,7 @@ namespace DeGokkers
             if (pic3.Location.X == 12)
             {
                 tmrBack3.Enabled = false;
-                button1.Visible = false;
+                btnBack.Visible = false;
                 btnStart.Visible = true;
                 btnAnimalChooser.Visible = true;
             }
@@ -436,7 +444,7 @@ namespace DeGokkers
             if (pic4.Location.X == 12)
             {
                 tmrBack4.Enabled = false;
-                button1.Visible = false;
+                btnBack.Visible = false;
                 btnStart.Visible = true;
                 btnAnimalChooser.Visible = true;
             }
@@ -458,6 +466,7 @@ namespace DeGokkers
             HasBetOne = false;
             HasBetTwo = false;
             HasBetThree = false;
+            btnAnimalChooser.Visible = true;
         }
         protected void WinnerAssign()
         {
@@ -479,6 +488,7 @@ namespace DeGokkers
         private void btnAnimalChooser_Click(object sender, EventArgs e)
         {
             selectedIndex = cbAnSel.SelectedIndex;
+            HasChosen = true;
             Object selectedItem = cbAnSel.SelectedItem;
             btnAnimalChooser.Visible = false;
 

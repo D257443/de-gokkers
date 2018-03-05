@@ -36,7 +36,7 @@
             this.lblMonTwo = new System.Windows.Forms.Label();
             this.lblMonThree = new System.Windows.Forms.Label();
             this.lblMonOne = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnBack = new System.Windows.Forms.Button();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnAddName = new System.Windows.Forms.Button();
             this.btnName2 = new System.Windows.Forms.RadioButton();
@@ -98,7 +98,7 @@
             this.groupBox1.Controls.Add(this.lblMonTwo);
             this.groupBox1.Controls.Add(this.lblMonThree);
             this.groupBox1.Controls.Add(this.lblMonOne);
-            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Controls.Add(this.btnBack);
             this.groupBox1.Controls.Add(this.btnStart);
             this.groupBox1.Controls.Add(this.btnAddName);
             this.groupBox1.Controls.Add(this.btnName2);
@@ -144,7 +144,15 @@
             // 
             // cbAnSel
             // 
+            this.cbAnSel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbAnSel.FormattingEnabled = true;
+            this.cbAnSel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.cbAnSel.Items.AddRange(new object[] {
+            "Hond",
+            "Olifant",
+            "Hamster",
+            "Panda",
+            "Panter"});
             this.cbAnSel.Location = new System.Drawing.Point(10, 176);
             this.cbAnSel.Name = "cbAnSel";
             this.cbAnSel.Size = new System.Drawing.Size(121, 21);
@@ -177,16 +185,16 @@
             this.lblMonOne.TabIndex = 25;
             this.lblMonOne.Text = "label6";
             // 
-            // button1
+            // btnBack
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.button1.Location = new System.Drawing.Point(355, 177);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(200, 81);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Loop terug";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.btnBack.Location = new System.Drawing.Point(355, 177);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(200, 81);
+            this.btnBack.TabIndex = 24;
+            this.btnBack.Text = "Loop terug";
+            this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnStart
             // 
@@ -540,7 +548,6 @@
             // pic1
             // 
             this.pic1.BackColor = System.Drawing.Color.White;
-            this.pic1.Image = global::DeGokkers.Properties.Resources.dog1;
             this.pic1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic1.InitialImage")));
             this.pic1.Location = new System.Drawing.Point(12, 12);
             this.pic1.Name = "pic1";
@@ -560,7 +567,6 @@
             // pic4
             // 
             this.pic4.BackColor = System.Drawing.Color.White;
-            this.pic4.Image = global::DeGokkers.Properties.Resources.dog1;
             this.pic4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic4.InitialImage")));
             this.pic4.Location = new System.Drawing.Point(12, 155);
             this.pic4.Name = "pic4";
@@ -571,7 +577,6 @@
             // pic3
             // 
             this.pic3.BackColor = System.Drawing.Color.White;
-            this.pic3.Image = global::DeGokkers.Properties.Resources.dog1;
             this.pic3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic3.InitialImage")));
             this.pic3.Location = new System.Drawing.Point(12, 108);
             this.pic3.Name = "pic3";
@@ -582,7 +587,6 @@
             // pic2
             // 
             this.pic2.BackColor = System.Drawing.Color.White;
-            this.pic2.Image = global::DeGokkers.Properties.Resources.dog1;
             this.pic2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pic2.InitialImage")));
             this.pic2.Location = new System.Drawing.Point(12, 60);
             this.pic2.Name = "pic2";
@@ -619,6 +623,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(601, 481);
             this.Controls.Add(this.pic2);
             this.Controls.Add(this.pic3);
@@ -687,7 +692,7 @@
         private System.Windows.Forms.ComboBox cbAnSel;
         public System.Windows.Forms.Timer tmrDog;
         protected System.Windows.Forms.Button btnStart;
-        protected System.Windows.Forms.Button button1;
+        protected System.Windows.Forms.Button btnBack;
         protected System.Windows.Forms.PictureBox pic1;
         protected System.Windows.Forms.PictureBox pic4;
         protected System.Windows.Forms.PictureBox pic3;
