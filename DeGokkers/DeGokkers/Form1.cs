@@ -300,6 +300,7 @@ namespace DeGokkers
                 tmrBack1.Enabled = false;
                 button1.Visible = false;
                 btnStart.Visible = true;
+                btnAnimalChooser.Visible = true;
             }
         }
 
@@ -311,6 +312,7 @@ namespace DeGokkers
                 tmrBack2.Enabled = false;
                 button1.Visible = false;
                 btnStart.Visible = true;
+                btnAnimalChooser.Visible = true;
             }
         }
 
@@ -322,6 +324,7 @@ namespace DeGokkers
                 tmrBack3.Enabled = false;
                 button1.Visible = false;
                 btnStart.Visible = true;
+                btnAnimalChooser.Visible = true;
             }
         }
 
@@ -333,6 +336,7 @@ namespace DeGokkers
                 tmrBack4.Enabled = false;
                 button1.Visible = false;
                 btnStart.Visible = true;
+                btnAnimalChooser.Visible = true;
             }
         }
         private void UpdateMoney()
